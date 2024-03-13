@@ -171,7 +171,7 @@ const testimonials = [
     {
         testimonial:
             "Nitin demonstrates a proactive attitude towards learning new technologies, readily adapting and ramping up on unfamiliar concepts and tools.",
-        name: "Siddharth",
+        name: "Siddharth Ahuja",
         designation: "Software Engineer II",
         company: "Microsoft",
         image: siddharth,
@@ -187,7 +187,7 @@ const testimonials = [
     {
         testimonial:
             "Nitin recognizes the significance of decomposing problems into sub-problems and follows a bottom-up approach to systematically address and solve them.",
-        name: "Archit",
+        name: "Archit Jain",
         designation: "Business Intelligence Engineer",
         company: "Amazon",
         image: archit,
