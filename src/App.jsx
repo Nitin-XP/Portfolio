@@ -1,23 +1,31 @@
+import React from "react";
 import { BrowserRouter } from "react-router-dom";
-import { About, Contact, Feedbacks, Hero, Navbar, StarsCanvas, Tech, Works } from "./components";
-const App = () => {
+import Navbar from "./components/Navbar";
 
+const LazyHero = React.lazy(() => import("./components/Hero"))
+const LazyAbout = React.lazy(() => import("./components/About"))
+const LazyContact = React.lazy(() => import("./components/Contact"))
+const LazyFeedbacks = React.lazy(() => import("./components/Feedbacks"))
+const LazyStarsCanvas = React.lazy(() => import('./components/canvas/Stars'))
+const LazyTech = React.lazy(() => import("./components/Tech"))
+const LazyWorks = React.lazy(() => import("./components/Works"))
+const App = () => {
   return (
     <>
       <BrowserRouter>
         <div className="relative z-0 bg-primary">
           <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
             <Navbar />
-            <Hero />
+            <React.Suspense fallback="Loading"><LazyHero /></React.Suspense>
           </div>
-          <About />
+          <React.Suspense fallback="Loading"><LazyAbout /></React.Suspense>
           {/* <Experience /> */}
-          <Tech />
-          <Works />
-          <Feedbacks />
+          <React.Suspense fallback="Loading"><LazyTech /></React.Suspense>
+          <React.Suspense fallback="Loading"><LazyWorks /></React.Suspense>
+          <React.Suspense fallback="Loading"><LazyFeedbacks /></React.Suspense>
           <div className="relative z-0">
-            <Contact />
-            <StarsCanvas></StarsCanvas>
+            <React.Suspense fallback="Loading"><LazyContact /></React.Suspense>
+            <React.Suspense fallback="Loading"><LazyStarsCanvas /></React.Suspense>
           </div>
 
         </div>
