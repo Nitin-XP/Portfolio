@@ -1,12 +1,11 @@
 import { motion } from 'framer-motion'
 import React from 'react'
 import { styles } from '../styles'
-import { ComputersCanvas } from './canvas'
 
 const Hero = () => {
   return (
     // in section h-[screen] changed to h-full
-    <section className="relative w-full h-screen mx-auto">
+    <section className="relative w-full h-[60vh] mx-auto">
 
       <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
 
@@ -23,7 +22,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <ComputersCanvas />
+      {/* <ComputersCanvas /> */}
 
       <div className="relative xs:bottom-2 bottom-32 w-full my-8 flex justify-center items-center">
         <a href="#about">

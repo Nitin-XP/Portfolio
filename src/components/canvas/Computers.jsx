@@ -11,7 +11,7 @@ const Computers = ({ isMobile }) => {
       <hemisphereLight intensity={8} groundColor={"blue"} />
       <pointLight intensity={10} />
       <spotLight position={[-20, 50, 10]} angle={0.13} penumbra={1} intensity={20} castShadow shadow-mapSize={1024} />
-      <primitive object={computer.scene} scale={isMobile ? 0.35 : 0.65} position={isMobile ? [0, -1.750, -1.5] : [0, -3.750, -1.5]} rotation={[-0.01, -0.01, -0.14]} />
+      <primitive object={computer.scene} scale={true ? 0.35 : 0.65} position={true ? [0, -1.750, -1.5] : [0, -3.750, -1.5]} rotation={[-0.01, -0.01, -0.14]} />
     </mesh>
   )
 }
@@ -21,6 +21,7 @@ const ComputersCanvas = () => {
   useEffect(() => {
     const mediaQuery = window.matchMedia('(max-width: 500px)');
     setIsMobile(mediaQuery.matches);
+    console.log(isMobile)
 
     const handleMediaQueryChange = (event) => {
       setIsMobile(event.matches);
