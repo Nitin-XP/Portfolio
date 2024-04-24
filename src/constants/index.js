@@ -1,6 +1,7 @@
 import {
     archit,
     backend,
+    colconai,
     creator,
     css,
     git,
@@ -221,7 +222,7 @@ const projects = [
         source_code_link: "https://github.com/",
     },
     {
-        name: "COLCON",
+        name: "COLCON AI",
         description:
             "Developing AI-powered code language converter: Seamlessly translates code between programming languages with advanced natural language processing.",
         tags: [
@@ -230,7 +231,7 @@ const projects = [
                 color: "blue-text-gradient",
             },
             {
-                name: "chatgpt",
+                name: "AI APIs",
                 color: "green-text-gradient",
             },
             {
@@ -238,8 +239,8 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        image: workinprogress,
-        source_code_link: "https://github.com/Nitin-XP",
+        image: colconai,
+        source_code_link: "https://colcon-ai.netlify.app/",
     },
     {
         name: "Trading Analysis",

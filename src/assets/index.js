@@ -10,6 +10,7 @@ import priyanka from "./priyanka.jpg";
 import siddharth from "./siddharth.png";
 import web from "./web.png";
 
+import colconai from "../assets/colconai.webp";
 import portfolio from "./portfolio.png";
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -37,7 +38,7 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
 export {
-  archit, backend, close, creator, css, docker,
+  archit, backend, close, colconai, creator, css, docker,
   figma,
   git, github, html,
   javascript, jobit, logo, menu, meta, mobile, mongodb, mysql, nodejs, portfolio, priyanka, pythonLogo, reactjs,
