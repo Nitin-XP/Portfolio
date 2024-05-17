@@ -9,6 +9,7 @@ const LazyFeedbacks = React.lazy(() => import("./components/Feedbacks"))
 const LazyStarsCanvas = React.lazy(() => import('./components/canvas/Stars'))
 const LazyTech = React.lazy(() => import("./components/Tech"))
 const LazyWorks = React.lazy(() => import("./components/Works"))
+const LazyFooter = React.lazy(() => import("./components/Footer"))
 const App = () => {
   return (
     <>
@@ -27,7 +28,7 @@ const App = () => {
             <React.Suspense fallback="Loading"><LazyContact /></React.Suspense>
             <React.Suspense fallback="Loading"><LazyStarsCanvas /></React.Suspense>
           </div>
-
+          <React.Suspense fallback="Loading"><LazyFooter /></React.Suspense>
         </div>
       </BrowserRouter>
     </>

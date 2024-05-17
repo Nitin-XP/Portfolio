@@ -4,9 +4,13 @@ import {
     colconai,
     creator,
     css,
+    gfg,
     git,
+    githubSvg,
     html,
     javascript,
+    leetCode,
+    linkedin,
     meta,
     mobile,
     mongodb,
@@ -17,6 +21,7 @@ import {
     pythonLogo,
     reactjs,
     redux,
+    resume,
     shopify,
     siddharth,
     starbucks,
@@ -24,7 +29,8 @@ import {
     tesla,
     threejs,
     web,
-    workinprogress
+    workinprogress,
+    x
 } from "../assets";
 
 export const navLinks = [
@@ -44,15 +50,15 @@ export const navLinks = [
 
 const services = [
     {
-        title: "Web Developer",
+        title: "Full Stack Developer",
         icon: web,
     },
     {
-        title: "React Developer",
+        title: "Forex Trader",
         icon: mobile,
     },
     {
-        title: "Backend Developer",
+        title: "YouTuber",
         icon: backend,
     },
     {
@@ -265,4 +271,38 @@ const projects = [
     },
 ];
 
-export { experiences, projects, services, technologies, testimonials };
+const footers = [
+    {
+        name: "LinkedIn",
+        icon: linkedin,
+        link: "https://www.linkedin.com/in/nitin-kumar-181547226",
+    },
+    {
+        name: "X",
+        icon: x,
+        link: "https://twitter.com/NITINKUMAR1501",
+    },
+    {
+        name: "GitHub",
+        icon: githubSvg,
+        link: "https://github.com/Nitin-XP",
+    },
+    {
+        name: "GFG",
+        icon: gfg,
+        link: "https://auth.geeksforgeeks.org/user/15nitin01",
+    },
+    {
+        name: "LeetCode",
+        icon: leetCode,
+        link: "https://leetcode.com/_NITIN_",
+    },
+    {
+        name: "Resume",
+        icon: resume,
+        link: "https://drive.google.com/file/d/112zCoihzvMpFzt424lfmW80FeMy2hWSF/view?usp=drivesdk",
+    },
+]
+
+export { experiences, footers, projects, services, technologies, testimonials };
+
